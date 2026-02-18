@@ -2,7 +2,7 @@ import { Github, Linkedin, Code } from 'lucide-react';
 
 export const portfolioData = {
   about: {
-    bio: "I specialize in building intelligent systems that solve complex, real-world problems. My expertise lies in designing scalable machine learning pipelines, advancing NLP research with RAG architectures, and engineering robust backend systems. I bridge the gap between theoretical AI research and production-grade software engineering.",
+    bio: "I am a Software Engineer and ML Researcher dedicated to building products where code meets intelligence. My expertise spans developing scalable full-stack applications and advancing NLP research with RAG architectures. I focus on engineering robust backend systems that power production-grade AI solutions.",
     focus: [
       "Building Scalable AI Products",
       "LLMs & RAG Pipelines",
@@ -19,7 +19,8 @@ export const portfolioData = {
     stats: {
       problemsSolved: "450+",
       streak: "115+",
-      rating: "2★ CodeChef"
+      rating: "2★ CodeChef",
+      leetcode: "Knight"
     }
   },
   experience: [

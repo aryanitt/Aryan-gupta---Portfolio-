@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Achievements = () => {
     const stats = [
-        { value: '450+', label: 'DSA Problems', sub: 'LeetCode & GFG', color: '#4f6ef7' },
+        { value: '450+', label: 'DSA Problems', sub: 'Knight @ LeetCode', color: '#4f6ef7' },
         { value: '115+', label: 'Day Streak', sub: 'Consistent Coding', color: '#22d3ee' },
         { value: '2★', label: 'CodeChef', sub: 'Competitive Rating', color: '#a78bfa' },
         { value: '3+', label: 'Hackathons', sub: 'Participated', color: '#10b981' },

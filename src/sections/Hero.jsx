@@ -19,6 +19,10 @@ const CountUp = ({ end, duration = 2000 }) => {
     useEffect(() => {
         if (!started) return;
         const num = parseInt(end);
+        if (isNaN(num)) {
+            setCount(end);
+            return;
+        }
         let start = 0;
         const step = num / (duration / 16);
         const timer = setInterval(() => {
@@ -34,8 +38,8 @@ const CountUp = ({ end, duration = 2000 }) => {
 
 const Hero = () => {
     const stats = [
-        { value: '450', suffix: '+', label: 'DSA Problems' },
-        { value: '95', suffix: '%', label: 'Model Accuracy' },
+        { value: 'Knight', suffix: '', label: 'LeetCode Rank' },
+        { value: '450', suffix: '+', label: 'DSA solved' },
         { value: '3', suffix: '+', label: 'Hackathons' },
         { value: '1', suffix: ' Yr', label: 'Experience' },
     ];
@@ -71,11 +75,9 @@ const Hero = () => {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     style={{ fontSize: '17px', color: 'rgba(240,240,245,0.55)', maxWidth: '560px', lineHeight: '1.7', marginBottom: '36px' }}
                 >
-                    <span style={{ color: '#4f6ef7', fontWeight: '600' }}>Information Technology</span> student & ML Engineer specializing in{' '}
-                    <span style={{ color: '#818cf8' }}>LLMs</span>,{' '}
-                    <span style={{ color: '#22d3ee' }}>RAG pipelines</span>, and{' '}
-                    <span style={{ color: '#f0f0f5' }}>scalable AI products</span>.
-                    Building the future of intelligent systems.
+                    <span style={{ color: '#4f6ef7', fontWeight: '600' }}>Software Engineer</span> & <span style={{ color: '#22d3ee', fontWeight: '600' }}>ML Researcher</span> specializing in building scalable full-stack applications and intelligent systems.
+                    Expertise in <span style={{ color: '#818cf8' }}>LLMs</span>, <span style={{ color: '#22d3ee' }}>RAG architectures</span>, and <span style={{ color: '#f0f0f5' }}>robust backend engineering</span>.
+                    Bridging the gap between code and intelligence.
                 </motion.p>
 
                 {/* CTAs */}
